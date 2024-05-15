@@ -436,28 +436,18 @@ body {
   padding-top: 130px;
   margin-top: 200px;
 }
-/* .main-text .div-text{
-  position: relative;
-  width: 100%;
-  background-color: red;
-}
-.main-text .div-text h2{
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 .main-text h2 {
   font-size: 60px;
   text-align: center;
 }
-.main-text  h2 span {
+.main-text h2 span {
   color: #0ef;
   text-align: center;
 }
 .portfolio-content {
   display: grid;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   grid-template-columns: repeat(auto-fit, minmax(359px, auto));
 }
 .row {
@@ -465,14 +455,15 @@ body {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  margin-top: 20px;
 }
 .row img {
-  width: 90%;
+  width: 100%;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
 }
-.layer {
+#layer {
   width: 100%;
   height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
@@ -484,27 +475,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 40px;
-  transition: height 0.5s;
+  padding: 20px 40px 0 40px;
+  transition: height ease-in-out 0.4s;
 }
-.layer h5 {
+#layer h5 {
   color: #000;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.layer p {
+#layer p {
   color: #000;
   font-size: 1rem;
   line-height: 1.8;
 }
-.layer i {
+#layer i {
   font-size: 20px;
-  color: #ff004f;
+  color: red;
   margin-top: 20px;
   background: #fff;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -513,7 +504,7 @@ body {
 .row:hover img {
   transform: scale(1.1);
 }
-.rwo:hover .layer {
+.row:hover #layer{
   height: 100%;
 }
 .contact{
