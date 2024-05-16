@@ -1,3 +1,12 @@
+:root {
+  --bg-color: #081b29;
+  --font-color: #0ef;
+  --text-color: #fff;
+}
+
+.my-element {
+  color: var(--main-color);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +16,7 @@
 }
 body {
   color: #ededed;
-  background-color: #081b29;
+  background-color: var(--bg-color);
 }
 .header {
   position: fixed;
@@ -24,7 +33,7 @@ body {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
   cursor: default;
@@ -34,7 +43,7 @@ body {
 .navbar a {
   display: inline-block;
   font-size: 25px;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -44,7 +53,7 @@ body {
   animation-delay: calc(0.2s * var(--i));
 }
 .navbar a:hover {
-  color: #0ef;
+  color: var(--font-color);
 }
 .home {
   position: relative;
@@ -75,7 +84,7 @@ body {
   animation-delay: 0.7s;
 }
 .home-content h3 span {
-  color: #0ef;
+  color: var(--font-color);
 }
 .home-content h1 {
   font-size: 56px;
@@ -98,10 +107,10 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid var(--font-color);
   border-radius: 50%;
   font-size: 20px;
-  color: #0ef;
+  color: var(--font-color);
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: 0.5s ease;
@@ -110,24 +119,24 @@ body {
   animation-delay: calc(0.2s * var(--i));
 }
 .home-sci a:hover {
-  background: #0ef;
-  color: #081b29;
-  box-shadow: 0 0 20px #0ef;
+  background: var(--font-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 20px var(--font-color);
 }
 .btn-box {
   display: inline-flex;
   padding: 12px 28px;
-  background: #0ef;
+  background: var(--font-color);
   border-radius: 40px;
   font-size: 16px;
-  color: #081b29;
+  color: var(--bg-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px var(--font-color), 0 0 25px var(--font-color);
 }
 .btn-box:hover {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
@@ -150,12 +159,12 @@ body {
   font-size: 60px;
 }
 .about-text h2 span {
-  color: #0ef;
+  color: var(--font-color);
 }
 .about-text h4 {
   font-size: 29px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.7;
   margin: 15px 0 30px;
 }
@@ -177,7 +186,7 @@ body {
   padding-bottom: 70px;
 }
 .sub-title span {
-  color: #0ef;
+  color: var(--font-color);
 }
 .container {
   padding: 90px;
@@ -217,21 +226,21 @@ body {
 .read {
   display: inline-block;
   padding: 12px 28px;
-  background: #0ef;
+  background: var(--font-color);
   border-radius: 40px;
   font-size: 16px;
-  color: #081b29;
+  color: var(--bg-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px var(--font-color), 0 0 25px var(--font-color);
 }
 .read:hover {
-  background: #0ef;
-  color: #081b29;
+  background: var(--font-color);
+  color: var(--bg-color);
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
     0 0 200px cyan;
 }
@@ -288,7 +297,7 @@ body {
 }
 .technical-bars .bar .progress-line span {
   height: 100%;
-  background-color: #0ef;
+  background-color: var(--font-color);
   position: absolute;
   border-radius: 10px;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -317,7 +326,7 @@ body {
   position: absolute;
   padding: 1px 8px;
   background-color: #000000;
-  color: #fff;
+  color: var(--text-color);
   font-size: 12px;
   border-radius: 3px;
   top: -28px;
@@ -389,7 +398,7 @@ body {
 }
 .path {
   stroke-width: 10;
-  stroke: #0ef;
+  stroke: var(--font-color);
   fill: transparent;
   stroke-dashoffset: 502;
   stroke-dasharray: 502;
@@ -441,7 +450,7 @@ body {
   text-align: center;
 }
 .main-text h2 span {
-  color: #0ef;
+  color: var(--font-color);
   text-align: center;
 }
 .portfolio-content {
@@ -466,7 +475,7 @@ body {
 #layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--font-color));
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -493,7 +502,7 @@ body {
   font-size: 20px;
   color: red;
   margin-top: 20px;
-  background: #fff;
+  background: var(--text-color);
   width: 30px;
   height: 30px;
   display: flex;
@@ -521,7 +530,7 @@ body {
   text-align: center;
 }
 .contact-text h2 span{
-  color: #0ef;
+  color: var(--font-color);
 }
 .contact-text h4{
   margin: 15px 0;
@@ -544,14 +553,14 @@ body {
 }
 .contact-list i{
   display: inline-block;
-  color: #0ef;
+  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
   transform: all .40s ease;
 }
 .contact-list li a:hover{
   transform: scale(1.01) translate(-5px);
-  color: #0ef;
+  color: var(--font-color);
 }
 .contact-icons i{
   display: inline-flex;
@@ -560,9 +569,9 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 2px solid var(--font-color);
   border-radius: 50%;
-  color: #0ef;
+  color: var(--font-color);
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: .5s ease;
@@ -571,9 +580,9 @@ body {
   animation-delay: calc(.2s * var(--i));
 }
 .contact-icons i:hover{
-  background: #0ef;
+  background: var(--font-color);
   color: #000;
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px var(--font-color);
 }
 .contact-form form{
   position: relative;
@@ -597,21 +606,21 @@ body {
 .contact-form form .send{
   display: inline-block;
   padding: 14px 60px;
-  background: #0ef;
+  background: var(--font-color);
   border-radius: 40px;
   font-size: 18px;
-  color: #081b29;
+  color: var(--bg-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef; 
+  box-shadow: 0 0 5px var(--font-color), 0 0 25px var(--font-color); 
 }
 .contact-form form .send:hover {
-  background: #0ef;
-  color: #081b29;
+  background: var(--font-color);
+  color: var(--bg-color);
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
     0 0 200px cyan;
 }
@@ -630,7 +639,7 @@ body {
 }
 .top i{
   color: #000;
-  background: #0ef;
+  background: var(--font-color);
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;
@@ -709,5 +718,26 @@ body {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@media (max-width: 872px) {
+ .home{
+  background-image: none;
+ }  
+}
+@media (max-width: 730px) {
+  .about-img{
+    display: none;
+  }  
+  .about{
+    display: block;
+  }
+  .about-text{
+    text-align: center;
+    padding: 0px 50px;
+  }
+  .contact{
+    display: block;
   }
 }
