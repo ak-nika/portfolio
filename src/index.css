@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-inter m-0 p-0 box-border;
+}
+.h1 {
+  @apply font-bold text-white text-[80px] leading-[88px] tracking-[-0.03em];
+}
+.h1-secondary {
+  @apply font-bold text-white text-[64px] leading-[72px] tracking-[-0.03em] mb-10;
+}
+.h1-formatted {
+  @apply font-bold text-white text-[40px] tracking-normal leading-[48px] mb-10;
+}
+.h2 {
+  @apply font-bold text-white text-[48px] leading-[56px] tracking-[-0.03em] mb-10;
+}
+.h2-formatted {
+  @apply font-bold text-white text-[36px] tracking-normal leading-10 mb-10;
+}
+.h3 {
+  @apply font-bold text-white text-[20px] leading-[28px] tracking-normal mb-10;
+}
+.h3-formatted {
+  @apply font-bold text-white text-[32px] tracking-normal leading-10 mb-10;
+}
+.h4-formatted {
+  @apply font-bold text-white text-[28px] tracking-normal leading-9 mb-10;
+}
+.h5-formatted {
+  @apply font-bold text-white text-[24px] tracking-normal leading-8 mb-10;
+}
+.h6-formatted {
+  @apply font-bold text-white text-[20px] tracking-normal leading-7 mb-10;
+}
+.small {
+  @apply font-bold text-grey text-[14px] leading-5 tracking-normal mb-5;
+}
+.paragraph {
+  @apply font-bold text-grey text-[16px] leading-5 tracking-normal mb-5;
+}
+.p-formatted {
+  @apply font-bold text-white text-[16px] tracking-normal leading-[26px] mb-5;
+}
