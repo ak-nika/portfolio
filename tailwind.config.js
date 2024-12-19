@@ -6,14 +6,12 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
-    },
-    colors: {
-      black: "#000000",
-      almostBlack: "#0E0E0E",
-      lighterBlack: "#1E1E1E",
-      lightBlack: "#333333",
-      grey: "#999999",
-      white: "#FFFFFF",
+      colors: {
+        almostBlack: "#0E0E0E",
+        lighterBlack: "#1E1E1E",
+        lightBlack: "#333333",
+        grey: "#999999",
+      },
     },
   },
   plugins: [],
