@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="px-5 py-3 sticky top-0">
+    <nav className="px-5 py-3 sticky top-0 z-50 bg-black">
       <div className="mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex justify-center items-center gap-3">
@@ -59,7 +59,7 @@ const Navbar = () => {
           } md:flex space-y-5 md:space-y-0 md:space-x-5 absolute md:static bg-black md:bg-transparent top-14 left-0 w-full md:w-auto p-5 md:p-0`}
         >
           <a
-            href=""
+            href="#portfolio"
             className="block md:inline hover:text-grey transition-colors"
             onClick={() => setIsOpen(false)}
           >

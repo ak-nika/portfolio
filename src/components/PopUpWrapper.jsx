@@ -6,6 +6,7 @@ const PopUpWrapper = ({ children, className }) => {
     threshold: 0.1,
     triggerOnce: true,
   });
+
   return (
     <div
       ref={ref}

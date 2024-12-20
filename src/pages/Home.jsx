@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../sections/Hero";
-import PopUpWrapper from "../components/PopUpWrapper";
+import Portfolio from "../sections/Portfolio";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Portfolio />
     </div>
   );
 };

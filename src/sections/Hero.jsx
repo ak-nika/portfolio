@@ -31,7 +31,7 @@ const Hero = () => {
           <img
             src={flower}
             alt="flower"
-            className="md:w-[500px] md:h-[500px] w-[390px] h-[400px]"
+            className="md:w-[500px] md:h-[500px] w-[390px] h-[400px] animate-[spin_15s_infinite_linear]"
           />
 
           <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black via-transparent to-transparent" />
