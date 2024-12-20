@@ -49,3 +49,9 @@ body {
 .p-formatted {
   @apply text-[16px] tracking-normal leading-[26px] mb-5;
 }
+.pop-up {
+  @apply opacity-0 translate-y-[50px] transition-all duration-500 ease-in-out;
+}
+.pop-up.active {
+  @apply opacity-100 translate-y-0;
+}
