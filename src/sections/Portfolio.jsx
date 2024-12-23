@@ -1,11 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PopUpWrapper from "../components/PopUpWrapper";
 import Chip from "../components/Chip";
 import LoaderCard from "../components/LoaderCard";
+import { getDocs } from "firebase/firestore";
+import { projectRef } from "../constants";
+import ProjectCard from "../components/ProjectCard";
+import Button from "../components/Button";
 
 const Portfolio = () => {
   const [loading, setLoading] = useState(true);
-  const array = [1, 2, 3, 4];
+  const [data, setData] = useState([
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
+    { id: 4 },
+  ]);
+
+  useEffect(() => {
+    // Fetch data from Firebase
+    getDocs(projectRef)
+      .then((snapshot) => {
+        let projects = [];
+
+        snapshot.docs.forEach((doc) => {
+          projects.push({ ...doc.data(), id: doc.id });
+        });
+
+        setData(projects.splice(-4));
+      })
+      .catch((error) => {
+        console.error("Error getting documents: ", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div
@@ -25,9 +54,23 @@ const Portfolio = () => {
       </div>
 
       <div className="mt-8 md:mt-6 lg:mt-8 flex justify-center items-center gap-6 flex-wrap w-full">
-        {loading
-          ? array.map((item) => <LoaderCard key={item} />)
-          : "Your Projects Here"}
+        {data.map((item) => (
+          <PopUpWrapper key={item.id} className="w-1/2 max-w-[800px]">
+            {loading ? (
+              <LoaderCard />
+            ) : (
+              <ProjectCard
+                image={item.images[2]}
+                title={item.title}
+                year={item.year}
+              />
+            )}
+          </PopUpWrapper>
+        ))}
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        <Button>See More</Button>
       </div>
     </div>
   );
