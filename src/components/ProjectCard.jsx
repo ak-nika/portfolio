@@ -1,8 +1,8 @@
 import React from "react";
 
-const ProjectCard = ({ image, title, year }) => {
+const ProjectCard = ({ image, title, year, link }) => {
   return (
-    <div className="w-full group cursor-pointer">
+    <a href={link} target="_blank" className="w-full group cursor-pointer">
       <div className="w-full h-[500px] border border-lighterBlack rounded-2xl relative overflow-hidden bg-red-200">
         <img
           src={image}
@@ -15,7 +15,7 @@ const ProjectCard = ({ image, title, year }) => {
         <h3 className="text-[20px]">{title}</h3>
         <p className="text-grey text-[16px]">{year}</p>
       </div>
-    </div>
+    </a>
   );
 };
 

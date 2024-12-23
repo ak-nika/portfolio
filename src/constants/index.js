@@ -43,4 +43,15 @@ const about = [
     text: "5,000+",
   },
 ];
-export { app, db, projectRef, languageRef, about };
+
+const career = [
+  {
+    id: 1,
+    title: "Web Developer Intern at SQI College of ICT",
+    duration: "May 2024 - December 2024",
+    description:
+      "As an intern at SQI College of ICT, I was responsible for teaching students a variety of programming languages and web development technologies. I conducted interactive sessions on HTML and CSS for building and styling web pages, JavaScript for creating dynamic and interactive interfaces. Additionally, I introduced students to Firebase for implementing real-time databases, and authentication. My role involved designing project-based learning experiences to help students apply their skills in real-world scenarios, providing one-on-one mentoring to address individual challenges, and bridging the gap between theoretical knowledge and practical application. Through this experience, I honed my technical expertise, communication skills, and ability to simplify complex concepts, while inspiring students to develop functional and visually appealing web applications",
+  },
+];
+
+export { app, db, projectRef, languageRef, about, career };

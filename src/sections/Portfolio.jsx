@@ -63,6 +63,7 @@ const Portfolio = () => {
                 image={item.images[2]}
                 title={item.title}
                 year={item.year}
+                link={item.liveUrl}
               />
             )}
           </PopUpWrapper>
