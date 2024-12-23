@@ -5,6 +5,7 @@ import Portfolio from "../sections/Portfolio";
 import Text from "../sections/Text";
 import About from "../sections/About";
 import Career from "../sections/Career";
+import Benefits from "../sections/Benefits";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Text />
       <About />
       <Career />
+      <Benefits />
     </>
   );
 };

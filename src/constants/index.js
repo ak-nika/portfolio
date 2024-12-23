@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection } from "firebase/firestore";
+import { search, sms, timer } from "../assets";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -54,4 +55,25 @@ const career = [
   },
 ];
 
-export { app, db, projectRef, languageRef, about, career };
+const benefits = [
+  {
+    id: 1,
+    icon: timer,
+    title: "Efficient Workflow",
+    text: "Streamlined design process for rapid delivery, meeting tight deadlines without compromising quality or detail.",
+  },
+  {
+    id: 2,
+    icon: sms,
+    title: "Collaborative Process",
+    text: "I work closely with you, integrating your feedback to create designs that exceed your expectations.",
+  },
+  {
+    id: 3,
+    icon: search,
+    title: "Attention to Detail",
+    text: "Meticulous attention to every element, ensuring a polished and cohesive final product that impresses.",
+  },
+];
+
+export { app, db, projectRef, languageRef, about, career, benefits };

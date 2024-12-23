@@ -70,9 +70,9 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <div className="mt-8 flex justify-center">
+      <PopUpWrapper className="mt-8 flex justify-center">
         <Button>See More</Button>
-      </div>
+      </PopUpWrapper>
     </section>
   );
 };
