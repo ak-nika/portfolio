@@ -8,7 +8,7 @@
   @apply font-inter m-0 p-0 box-border text-white scroll-smooth scroll-m-4;
 }
 body {
-  @apply bg-black;
+  @apply bg-black overflow-x-hidden;
 }
 .h1 {
   @apply text-[80px] leading-[88px] tracking-[-0.03em];

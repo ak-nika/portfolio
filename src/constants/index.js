@@ -21,4 +21,26 @@ const db = getFirestore(app);
 const projectRef = collection(db, "projects");
 const languageRef = collection(db, "languages");
 
-export { app, db, projectRef, languageRef };
+const about = [
+  {
+    id: 1,
+    title: "Years of Experience",
+    text: "1+",
+  },
+  {
+    id: 2,
+    title: "Clients",
+    text: "5+",
+  },
+  {
+    id: 3,
+    title: "Projects Completed",
+    text: "40+",
+  },
+  {
+    id: 4,
+    title: "Hours of Developing",
+    text: "5,000+",
+  },
+];
+export { app, db, projectRef, languageRef, about };

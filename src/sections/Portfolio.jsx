@@ -53,9 +53,9 @@ const Portfolio = () => {
         </PopUpWrapper>
       </div>
 
-      <div className="mt-8 md:mt-6 lg:mt-8 flex justify-center items-center gap-6 flex-wrap w-full">
+      <div className="mt-8 md:mt-6 lg:mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {data.map((item) => (
-          <PopUpWrapper key={item.id} className="w-1/2 max-w-[800px]">
+          <PopUpWrapper key={item.id}>
             {loading ? (
               <LoaderCard />
             ) : (
