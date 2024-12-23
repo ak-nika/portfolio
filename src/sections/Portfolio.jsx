@@ -37,7 +37,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div
+    <section
       id="portfolio"
       className="mt-[10px] py-20 px-5 md:py-[100px] md:px-8 lg:pt-[120px] lg:px-10 lg:pb-[100px]"
     >
@@ -72,7 +72,7 @@ const Portfolio = () => {
       <div className="mt-8 flex justify-center">
         <Button>See More</Button>
       </div>
-    </div>
+    </section>
   );
 };
 
