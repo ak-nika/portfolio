@@ -6,6 +6,7 @@ import Text from "../sections/Text";
 import About from "../sections/About";
 import Career from "../sections/Career";
 import Benefits from "../sections/Benefits";
+import Languages from "../sections/Languages";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Portfolio />
       <Text />
       <About />
+      <Languages />
       <Career />
       <Benefits />
     </>
