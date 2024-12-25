@@ -7,7 +7,7 @@ const ProjectCard = ({ image, title, year, link }) => {
         <img
           src={image}
           alt={title}
-          className="absolute inset-0 m-auto object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300"
+          className="absolute inset-0 m-auto object-cover w-full h-full md:grayscale md:group-hover:grayscale-0 transition-all duration-300"
         />
       </div>
 
