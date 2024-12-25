@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  @apply font-inter m-0 p-0 box-border text-white scroll-smooth scroll-m-4;
+  @apply font-inter m-0 p-0 box-border text-white scroll-smooth;
 }
 body {
   @apply bg-black overflow-x-hidden;

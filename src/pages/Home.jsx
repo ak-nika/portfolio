@@ -8,6 +8,7 @@ import Career from "../sections/Career";
 import Benefits from "../sections/Benefits";
 import Languages from "../sections/Languages";
 import Contact from "../sections/Contact";
+import Footer from "../sections/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Career />
       <Benefits />
       <Contact />
+      <Footer />
     </>
   );
 };
