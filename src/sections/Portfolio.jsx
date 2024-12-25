@@ -6,6 +6,7 @@ import { getDocs } from "firebase/firestore";
 import { projectRef } from "../constants";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [loading, setLoading] = useState(true);
@@ -71,7 +72,9 @@ const Portfolio = () => {
       </div>
 
       <PopUpWrapper className="mt-8 flex justify-center">
-        <Button>See More</Button>
+        <Link to="/projects">
+          <Button>See More</Button>
+        </Link>
       </PopUpWrapper>
     </section>
   );

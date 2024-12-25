@@ -21,7 +21,9 @@ const Hero = () => {
       </PopUpWrapper>
 
       <PopUpWrapper className={"delay-200"}>
-        <Button className="mx-auto mt-10">Email me</Button>
+        <a href="mailto:akingbayiojo1@gmail.com">
+          <Button className="mx-auto mt-10">Email me</Button>
+        </a>
       </PopUpWrapper>
 
       <PopUpWrapper className={"delay-300"}>
