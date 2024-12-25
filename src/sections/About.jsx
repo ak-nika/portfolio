@@ -6,7 +6,10 @@ import PopUpWrapper from "../components/PopUpWrapper";
 
 const About = () => {
   return (
-    <section className="mt-[10px] py-20 px-5 md:py-[100px] md:px-8 lg:px-10 flex flex-col md:flex-col-reverse lg:flex-row">
+    <section
+      className="mt-[10px] py-20 px-5 md:py-[100px] md:px-8 lg:px-10 flex flex-col md:flex-col-reverse lg:flex-row"
+      id="about"
+    >
       <PopUpWrapper>
         <div className="flex justify-center items-center">
           <div className="w-[350px] h-[405.5px] md:w-[448px] md:h-[537px] lg:w-[480px] lg:h-[580px] bg-lighterBlack opacity-80 border border-lightBlack rounded-lg">

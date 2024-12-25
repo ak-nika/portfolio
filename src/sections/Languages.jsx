@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Marquee from "react-marquee-slider";
 import { languageRef } from "../constants";
 import { getDocs } from "firebase/firestore";
+import PopUpWrapper from "../components/PopUpWrapper";
 
 const Languages = () => {
   const [data, setData] = useState([]);
@@ -30,9 +31,7 @@ const Languages = () => {
 
   return (
     <section className="py-10 px-5 md:py-[60px] md:px-8">
-      <div className="bg-almostBlack border border-lightBlack rounded-2xl p-4 relative overflow-hidden">
-        {/* <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-red-200 via-transparent via-4/5 to-red-200" /> */}
-
+      <PopUpWrapper className="bg-almostBlack border border-lightBlack rounded-2xl p-4 relative overflow-hidden">
         {loading ? (
           <div className="absolute w-full h-[50px] rounded-2xl inset-0 bg-lightBlack animate-pulse" />
         ) : (
@@ -46,7 +45,7 @@ const Languages = () => {
             ))}
           </Marquee>
         )}
-      </div>
+      </PopUpWrapper>
     </section>
   );
 };

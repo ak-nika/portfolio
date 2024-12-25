@@ -11,7 +11,7 @@ body {
   @apply bg-black overflow-x-hidden;
 }
 .h1 {
-  @apply text-[80px] leading-[88px] tracking-[-0.03em];
+  @apply text-[70px] md:text-[80px] leading-[88px] tracking-[-0.03em];
 }
 .h1-secondary {
   @apply text-[64px] leading-[72px] tracking-[-0.03em] mb-10;
@@ -54,4 +54,14 @@ body {
 }
 .pop-up.active {
   @apply opacity-100 translate-y-0;
+}
+.black-gradient {
+  background: linear-gradient(
+    to top,
+    black,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.9),
+    black
+  );
 }
