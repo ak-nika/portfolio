@@ -60,22 +60,28 @@ const Footer = () => {
           <PopUpWrapper>
             <ul className="flex flex-col gap-3">
               <li>
-                <a href="" className="text-grey">
+                <a
+                  href="https://www.linkedin.com/in/akingbayi-ojo-440990335/"
+                  className="text-grey"
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="" className="text-grey">
+                <a href="https://x.com/ak_in07" className="text-grey">
                   X (formerly Twitter)
                 </a>
               </li>
               <li>
-                <a href="" className="text-grey">
+                <a
+                  href="https://www.instagram.com/ak.in_kun/"
+                  className="text-grey"
+                >
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="" className="text-grey">
+                <a href="https://github.com/ak-nika" className="text-grey">
                   Github
                 </a>
               </li>
