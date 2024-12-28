@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 * {
-  @apply font-inter m-0 p-0 box-border text-white scroll-smooth cursor-none;
+  @apply font-inter m-0 p-0 box-border text-white scroll-smooth cursor-none outline outline-white;
 }
 body {
-  @apply bg-black overflow-x-hidden;
+  @apply bg-black;
 }
 a {
   @apply cursor-none;
@@ -69,7 +69,7 @@ a {
   );
 }
 #cursor-trail {
-  @apply fixed top-0 left-0 pointer-events-none z-[9999];
+  @apply hidden lg:block fixed top-0 left-0 pointer-events-none z-[9999];
 }
 .dot {
   @apply absolute w-2 h-2 bg-white rounded-full translate-x-[-50%] translate-y-[-50%];

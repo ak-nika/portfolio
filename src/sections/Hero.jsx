@@ -6,7 +6,7 @@ import PopUpWrapper from "../components/PopUpWrapper";
 
 const Hero = () => {
   return (
-    <section className="pt-[64px] px-5 pb-10 md:pt-[120px] md:px-8 md:pb-0 lg:pt-[140px] lg:px-10">
+    <section className="pt-[64px] px-5 pb-10 md:pt-[120px] md:px-8 md:pb-0 lg:pt-[140px] lg:px-10 overflow-hidden">
       <div className="flex justify-center items-center">
         <PopUpWrapper>
           <Chip>Hello, I'm Akin 👋</Chip>
