@@ -43,7 +43,10 @@ const Contact = () => {
         <PopUpWrapper>
           <p className="paragraph text-center mt-6">
             Or message{" "}
-            <a href="tel:+2348122492709" className="text-white">
+            <a
+              href="https://wa.me/message/EKJZM6V2ISI5C1"
+              className="text-white"
+            >
               +2348122492709
             </a>{" "}
             on WhatsApp
