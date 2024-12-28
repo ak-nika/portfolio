@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  @apply font-inter m-0 p-0 box-border text-white scroll-smooth cursor-none outline outline-white;
+  @apply font-inter m-0 p-0 box-border text-white scroll-smooth cursor-none;
 }
 body {
   @apply bg-black;
