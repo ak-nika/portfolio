@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ image, title, year, link }) => {
   return (
-    <a href={link} target="_blank" className="w-full group cursor-pointer">
+    <a href={link} target="_blank" className="w-full group">
       <div className="w-full h-[500px] border border-lighterBlack rounded-2xl relative overflow-hidden bg-red-200">
         <img
           src={image}

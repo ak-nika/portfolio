@@ -5,10 +5,13 @@
 @tailwind utilities;
 
 * {
-  @apply font-inter m-0 p-0 box-border text-white scroll-smooth;
+  @apply font-inter m-0 p-0 box-border text-white scroll-smooth cursor-none;
 }
 body {
   @apply bg-black overflow-x-hidden;
+}
+a {
+  @apply cursor-none;
 }
 .h1 {
   @apply text-[70px] md:text-[80px] leading-[88px] tracking-[-0.03em];
@@ -64,4 +67,13 @@ body {
     rgba(0, 0, 0, 0.9),
     black
   );
+}
+#cursor-trail {
+  @apply fixed top-0 left-0 pointer-events-none z-[9999];
+}
+.dot {
+  @apply absolute w-2 h-2 bg-white rounded-full translate-x-[-50%] translate-y-[-50%];
+}
+.trail {
+  @apply absolute w-8 h-8 bg-gray-400 rounded-full opacity-50 translate-x-[-50%] translate-y-[-50%];
 }

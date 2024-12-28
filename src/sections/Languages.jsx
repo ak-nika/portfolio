@@ -7,6 +7,7 @@ import PopUpWrapper from "../components/PopUpWrapper";
 const Languages = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [velocity, setVelocity] = useState(10);
 
   useEffect(() => {
     getDocs(languageRef)
@@ -29,13 +30,30 @@ const Languages = () => {
       });
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setVelocity(10);
+      } else if (window.innerWidth < 1024) {
+        setVelocity(15);
+      } else {
+        setVelocity(20);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="py-10 px-5 md:py-[60px] md:px-8">
       <PopUpWrapper className="bg-almostBlack border border-lightBlack rounded-2xl p-4 relative overflow-hidden">
         {loading ? (
           <div className="absolute w-full h-[50px] rounded-2xl inset-0 bg-lightBlack animate-pulse" />
         ) : (
-          <Marquee velocity={30} minScale={0.7} resetAfterTries={200}>
+          <Marquee velocity={velocity} minScale={0.7} resetAfterTries={200}>
             {data.map((item) => (
               <div key={item.id} className="flex items-center gap-2 mx-4">
                 <img src={item.imgUrl} alt={item.name} width={20} />
