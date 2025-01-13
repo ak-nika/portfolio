@@ -16,7 +16,8 @@ const About = () => {
             <img
               src={fullbody}
               alt="fullbody"
-              className="w-full h-full object-contain "
+              width={300}
+              className="w-full h-full object-contain"
             />
           </div>
         </div>

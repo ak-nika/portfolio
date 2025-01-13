@@ -1,5 +1,5 @@
 import flower from "./flower.png";
-import profile from "./profile.avif";
+import profile from "./profile.jpeg";
 import fullbody from "./fullbody.png";
 import search from "./search.svg";
 import sms from "./sms.svg";
