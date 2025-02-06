@@ -60,21 +60,21 @@ const Navbar = () => {
         >
           <a
             href="#portfolio"
-            className="block md:inline hover:text-grey transition-colors"
+            className="block md:inline hover:text-grey transition-colors link"
             onClick={() => setIsOpen(false)}
           >
             Portfolio
           </a>
           <a
             href="#about"
-            className="block md:inline hover:text-grey transition-colors"
+            className="block md:inline hover:text-grey transition-colors link"
             onClick={() => setIsOpen(false)}
           >
             About
           </a>
           <a
             href="#contact"
-            className="block md:inline hover:text-grey transition-colors"
+            className="block md:inline hover:text-grey transition-colors link"
             onClick={() => setIsOpen(false)}
           >
             Contact

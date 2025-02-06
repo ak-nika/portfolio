@@ -98,7 +98,7 @@ const Footer = () => {
         <PopUpWrapper>
           <p className="small">
             Created by{" "}
-            <a href="https://github.com/ak-nika" className="text-white">
+            <a href="https://github.com/ak-nika" className="text-white link">
               Nika
             </a>
           </p>

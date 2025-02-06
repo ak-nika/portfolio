@@ -45,7 +45,7 @@ const Contact = () => {
             Or message{" "}
             <a
               href="https://wa.me/message/EKJZM6V2ISI5C1"
-              className="text-white"
+              className="text-white link"
             >
               +2348122492709
             </a>{" "}
