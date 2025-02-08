@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PopUpWrapper from "../components/PopUpWrapper";
 import Chip from "../components/Chip";
 import LoaderCard from "../components/LoaderCard";
-import { getDocs } from "firebase/firestore";
+import { getDocs, query, orderBy, limit } from "firebase/firestore";
 import { projectRef } from "../constants";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
@@ -18,23 +18,27 @@ const Portfolio = () => {
   ]);
 
   useEffect(() => {
-    // Fetch data from Firebase
-    getDocs(projectRef)
-      .then((snapshot) => {
-        let projects = [];
+    const fetchProjects = async () => {
+      setLoading(true);
+      try {
+        const q = query(projectRef, orderBy("timestamp", "asc"), limit(4)); // Get latest 4 projects
 
-        snapshot.docs.forEach((doc) => {
-          projects.push({ ...doc.data(), id: doc.id });
-        });
+        const snapshot = await getDocs(q);
+        const projects = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
 
-        setData(projects.splice(-4));
-      })
-      .catch((error) => {
+        setData(projects);
+        console.log(projects);
+      } catch (error) {
         console.error("Error getting documents: ", error);
-      })
-      .finally(() => {
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    fetchProjects();
   }, []);
 
   return (
