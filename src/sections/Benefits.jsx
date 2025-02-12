@@ -20,7 +20,7 @@ const Benefits = () => {
         {benefits.map((item) => (
           <PopUpWrapper
             key={item.id}
-            className="bg-almostBlack rounded-2xl border border-lightBlack p-10"
+            className="bg-almostBlack rounded-2xl border border-lightBlack p-10 shine"
           >
             <div className="p-4 bg-[#1e1e1e] rounded-xl w-[50px] h-[50px] flex justify-center items-center border border-[#202020] mb-6">
               <img src={item.icon} alt="icon" className="w-full" />
