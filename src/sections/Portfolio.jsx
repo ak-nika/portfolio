@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PopUpWrapper from "../components/PopUpWrapper";
 import Chip from "../components/Chip";
 import LoaderCard from "../components/LoaderCard";

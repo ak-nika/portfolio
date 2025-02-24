@@ -1,4 +1,4 @@
-const Button = ({ children, className, to }) => {
+const Button = ({ children, className }) => {
   return (
     <button
       className={` cursor-none py-3 px-4 pr-10 rounded-full border border-white hover:text-black hover:bg-white transition-colors flex justify-center items-center gap-3 relative group overflow-hidden ${

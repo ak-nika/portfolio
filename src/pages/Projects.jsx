@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PopUpWrapper from "../components/PopUpWrapper";
 import { getDocs } from "firebase/firestore";
 import { projectRef } from "../constants";
@@ -27,6 +27,7 @@ const Projects = () => {
       })
       .finally(() => {
         setIsLoading(false);
+        window.scrollTo(0, 0);
       });
   }, []);
 

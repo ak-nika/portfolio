@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
 import Cursor from "./components/Cursor";
@@ -23,14 +23,6 @@ const App = () => {
           }
         />
         <Route
-          path="*"
-          element={
-            <Suspense fallback={<Loader />}>
-              <NotFound />
-            </Suspense>
-          }
-        />
-        <Route
           path="/projects"
           element={
             <Suspense fallback={<Loader />}>
@@ -43,6 +35,14 @@ const App = () => {
           element={
             <Suspense fallback={<Loader />}>
               <Project />
+            </Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<Loader />}>
+              <NotFound />
             </Suspense>
           }
         />
