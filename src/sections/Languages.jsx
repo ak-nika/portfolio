@@ -56,7 +56,7 @@ const Languages = () => {
           <Marquee velocity={velocity} minScale={0.7} resetAfterTries={200}>
             {data.map((item) => (
               <div key={item.id} className="flex items-center gap-2 mx-4">
-                <img src={item.imgUrl} alt={item.name} width={20} />
+                <img src={item.imgUrl} alt={item.name} width={20} height={20} />
 
                 <h3>{item.name}</h3>
               </div>

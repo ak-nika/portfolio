@@ -33,6 +33,8 @@ const Hero = () => {
           <img
             src={flower}
             alt="flower"
+            width={500}
+            height={500}
             className="md:w-[500px] md:h-[500px] w-[390px] h-[400px] animate-[spin_15s_infinite_linear]"
           />
 
